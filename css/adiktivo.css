@@ -1,0 +1,137 @@
+.tiles {
+  list-style-type: none;
+  margin: 25px 0;
+  padding: 0;
+}
+
+
+
+.tiles > li:hover:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 125px;
+  height: 125px;
+  background: none;
+  pointer-events: none;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.tiles > li.long:hover:before {
+  width: 235px;
+}
+.tiles > li.long > a {
+  width: 245px;
+}
+
+.tiles > li.high:hover:before {
+  height: 235px;
+}
+.tiles > li.high > a {
+  height: 245px;
+}
+
+
+.tiles > li > a {
+  width: 120px;
+  height: 120px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/*////////////////////////////////////*/
+
+
+.box .box-content::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.box.box-bordered.box-color.purple .box-content {
+    border-color: #de244f;
+}
+
+.box.box-bordered .box-content {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+       
+    border-style: none solid solid;
+    border-width: 0 2px 2px;
+}
+.box .box-content {
+    background: none repeat scroll 0 0 #fff;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+.box.box-color .box-title h3 {
+    color: #fff;
+}
+.box .box-title h3 {
+    color: #444;
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 3px 0;
+}
+
+
+.box .box-title::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.box.box-bordered.box-color.purple .box-title {
+    border-color: #de244f !important;
+}
+.box.box-color.purple .box-title {
+    background: none repeat scroll 0 0 #de244f !important;
+}
+.box.box-bordered.box-color .box-title {
+    border-color: #368ee0;
+}
+
+.box.box-color .box-title {
+    background: none repeat scroll 0 0 #368ee0;
+}
+.box .box-title {
+    padding: 7px 0 7px 10px;
+}
+
+ul > li.pink, .label-pink {
+    background: none repeat scroll 0 0 #e671b8;
+}
+.tiles > li {
+    float: left;
+    margin: 8px 0 0 8px;
+    position: relative;
+}
+li {
+    line-height: 20px;
+}
+
+#quiz{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
